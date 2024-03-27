@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of the page -->
+    <title>Pizza Maker</title>
+    <!-- css file connected -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <h1>Pizza Maker</h1>
+        <!-- form for pizza costumisation -->
+        <form id="pizzaForm">
+            <!-- choosing pizza type -->
+            <div>
+                <label for="pizzaType">Pizza Type:</label>
+                <select id="pizzaType" name="pizzaType">
+                    <option value="custom">Custom Pizza</option>
+                    <option value="pepperoni">Pepperoni Pizza</option>
+                    <option value="vegetable">Vegetable Pizza</option>
+                </select>
+            </div>
+            <!-- choosing pizza size -->
+            <div id="pizzaOptions">
+                <div>
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <!-- choosing pizza Crust -->
+                <div>
+                    <label for="crust">Crust:</label>
+                    <select id="crust" name="crust">
+                        <option value="thin">Thin</option>
+                        <option value="thick">Thick</option>
+                        <option value="stuffed">Stuffed</option>
+                        <option value="gluten-free">Gluten-Free</option>
+                    </select>
+                </div>            
+                <!-- choosing pizza Sause -->
+                <div>
+                    <label for="sauce">Sauce:</label>
+                    <input type="radio" id="tomato" name="sauce" value="tomato">
+                    <label for="tomato">Tomato</label>
+                    <input type="radio" id="bbq" name="sauce" value="bbq">
+                    <label for="bbq">BBQ</label>
+                </div>            
+                <!-- choosing pizza Cheese -->
+                <div>
+                    <label for="cheese">Cheese:</label>
+                    <input type="checkbox" id="mozzarella" name="cheese" value="mozzarella">
+                    <label for="mozzarella">Mozzarella</label>
+                    <input type="checkbox" id="cheddar" name="cheese" value="cheddar">
+                    <label for="cheddar">Cheddar</label>
+                    <input type="checkbox" id="parmesan" name="cheese" value="parmesan">
+                    <label for="parmesan">Parmesan</label>
+                </div>            
+                <!-- choosing pizza toppings -->
+                <div>
+                    <label for="toppings">Toppings:</label>
+                    <input type="checkbox" id="pepperoniTopping" name="toppings" value="pepperoni">
+                    <label for="pepperoniTopping">Pepperoni</label>
+                    <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                    <input type="checkbox" id="sausage" name="toppings" value="sausage">
+                    <label for="sausage">Sausage</label>
+                    <input type="checkbox" id="olives" name="toppings" value="olives">
+                    <label for="olives">Olives</label>
+                    <input type="checkbox" id="onions" name="toppings" value="onions">
+                    <label for="onions">Onions</label>
+                    <input type="checkbox" id="bellPeppers" name="toppings" value="bellPeppers">
+                    <label for="bellPeppers">Bell Peppers</label>
+                </div>
+            </div>
+            <!-- Button for submission -->
+            <button type="submit">Order</button>
+        </form>
+        <!-- empty div for student information -->
+        <p id="studentInfo"></p>
+        <!-- empty div for pizza Costumisation results -->
+        <div id="pizzaOutput"></div>
+    </div>
+
+    <!-- Java Script file connected -->
+    <script src="./js/script.js" defer></script>
+</body>
+</html>
